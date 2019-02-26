@@ -1,9 +1,7 @@
 package ru.amc.makeathon.openfeedbackplatform.web;
 
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
+import ru.amc.makeathon.openfeedbackplatform.model.HealthcheckStatus;
 import ru.amc.makeathon.openfeedbackplatform.model.Topic;
 
 import java.util.Collection;
@@ -11,11 +9,13 @@ import java.util.UUID;
 
 import static ru.amc.makeathon.openfeedbackplatform.web.Stubs.*;
 
-@RestController("api")
+@RestController
+@RequestMapping("api")
 public class MainController {
 
     @GetMapping("health")
-    public void getHealthcheckStatus() {
+    public Object healthCheck() {
+        return new HealthcheckStatus("OK");
     }
 
     @PostMapping("topic")
