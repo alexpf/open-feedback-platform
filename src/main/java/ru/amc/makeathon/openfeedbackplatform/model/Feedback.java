@@ -20,6 +20,10 @@ public class Feedback {
     @Max(10)
     private int qualityLevelGrade;
 
+    private String entityName;
+
+    private String comment;
+
     @NotNull
     private Double latitude;
 

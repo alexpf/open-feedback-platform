@@ -2,8 +2,11 @@ package ru.amc.makeathon.openfeedbackplatform.model;
 
 import lombok.*;
 
+import javax.validation.constraints.NotEmpty;
 import javax.validation.constraints.NotNull;
 import java.util.Collection;
+
+// TODO: created by?
 
 @Getter
 @Setter
@@ -18,6 +21,6 @@ public class Topic {
 
     private String description;
 
-    @NotNull
+    @NotEmpty
     private Collection<QualityLevel> qualityLevels;
 }
