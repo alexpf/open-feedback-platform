@@ -1,4 +1,3 @@
-1. Create topic in Cassandra
 2. Get all topics from Cassandra
 3. Create feedback in Cassandra
 4. Initial setup of Cassandra: schema, some initial data

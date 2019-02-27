@@ -11,7 +11,7 @@ import javax.validation.constraints.NotNull;
 @Getter
 @Setter
 @NoArgsConstructor
-public class Feedback {
+public class FeedbackDto {
 
     @NotNull
     private String topicUuid;

@@ -6,13 +6,11 @@ import javax.validation.constraints.NotEmpty;
 import javax.validation.constraints.NotNull;
 import java.util.Collection;
 
-// TODO: created by?
-
 @Getter
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
-public class Topic {
+public class TopicDto {
 
     private String uuid;
 
@@ -23,4 +21,6 @@ public class Topic {
 
     @NotEmpty
     private Collection<QualityLevel> qualityLevels;
+
+    private String createdBy;
 }
