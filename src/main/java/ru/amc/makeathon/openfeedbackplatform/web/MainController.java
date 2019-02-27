@@ -5,6 +5,7 @@ import ru.amc.makeathon.openfeedbackplatform.model.Feedback;
 import ru.amc.makeathon.openfeedbackplatform.model.HealthcheckStatus;
 import ru.amc.makeathon.openfeedbackplatform.model.Topic;
 
+import javax.validation.Valid;
 import java.util.Collection;
 import java.util.UUID;
 
@@ -20,13 +21,13 @@ public class MainController {
     }
 
     @PostMapping("topic")
-    public Topic addNewTopic(@RequestBody Topic newTopic) {
+    public Topic addNewTopic(@RequestBody @Valid Topic newTopic) {
         newTopic.setUuid(UUID.randomUUID().toString());
         return newTopic;
     }
 
     @PostMapping("feedback")
-    public void addNewFeedback(@RequestBody Feedback feedback) {
+    public void addNewFeedback(@RequestBody @Valid Feedback feedback) {
     }
 
     @GetMapping("topic")
