@@ -1,0 +1,22 @@
+{
+    type: 'FeatureCollection',
+    features: [{
+        type: 'Feature',
+        geometry: {
+            type: 'Point',
+            coordinates: [55.733835, 37.588227]
+        },
+        properties: {
+            weight: 1
+        }
+    }, {
+        type: 'Feature',
+        geometry: {
+            type: 'Point',
+            coordinates: [55.733835, 37.598227]
+        },
+        properties: {
+            weight: 10
+        }
+    }]
+};
