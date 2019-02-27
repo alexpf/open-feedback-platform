@@ -1,7 +1,7 @@
 package ru.amc.makeathon.openfeedbackplatform.web;
 
-import ru.amc.makeathon.openfeedbackplatform.model.QualityLevel;
-import ru.amc.makeathon.openfeedbackplatform.model.Topic;
+import ru.amc.makeathon.openfeedbackplatform.web.dto.QualityLevel;
+import ru.amc.makeathon.openfeedbackplatform.web.dto.Topic;
 
 import java.util.Collection;
 import java.util.UUID;

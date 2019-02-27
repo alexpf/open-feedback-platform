@@ -1,4 +1,4 @@
-package ru.amc.makeathon.openfeedbackplatform.model;
+package ru.amc.makeathon.openfeedbackplatform.web.dto;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
