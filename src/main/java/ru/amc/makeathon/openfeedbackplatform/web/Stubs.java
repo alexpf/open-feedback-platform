@@ -12,21 +12,21 @@ public final class Stubs {
 
     public static final Collection<TopicDto> STUB_TOPICS = asList(
             new TopicDto(uuid(),
-                    name("Скорость обслуживания"),
+                    name("Уличное освещение"),
                     description(""),
                     asList(
-                            new QualityLevel(name("Медленно"), description(""), grade(1)),
-                            new QualityLevel(name("Средне"), description(""), grade(2)),
-                            new QualityLevel(name("Норм"), description(""), grade(3))
+                            new QualityLevel(name("Очень темно"), description(""), grade(1)),
+                            new QualityLevel(name("Освещается, но слабо"), description(""), grade(2)),
+                            new QualityLevel(name("На улице светло"), description(""), grade(3))
                     ),
                     createdBy(null)),
             new TopicDto(uuid(),
-                    name("Свежесть продуктов"),
+                    name("Уборка снега"),
                     description(""),
                     asList(
-                            new QualityLevel(name("Тухляк"), description(""), grade(1)),
-                            new QualityLevel(name("Обычная"), description(""), grade(2)),
-                            new QualityLevel(name("Как от бабок"), description(""), grade(3))
+                            new QualityLevel(name("Ни проехать, ни пройти"), description(""), grade(1)),
+                            new QualityLevel(name("Убирают минимально"), description(""), grade(2)),
+                            new QualityLevel(name("Все чисто"), description(""), grade(3))
                     ),
                     createdBy(null))
     );
